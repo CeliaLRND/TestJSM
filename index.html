@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSMUSIC</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="css/styleorg.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/perfectscrollbar.css">
+
+	<!-- JS SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.16/js/perfect-scrollbar.jquery.js"></script>
+    <script src="https://use.fontawesome.com/7583ef23f0.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+	$(function() {
+    $('#spotlight').perfectScrollbar();
+});
+</script>
+
+
+	<div class="main">
+		<div class="header">
+			<div class="logo">
+				<img src="img/logo.png">
+				<div class="url">
+				<span class="jsmusic">JSMUSIC.</span><span class="com">COM</span>
+				</div>
+			</div>
+			<div class="title">
+				<span class="name">Jean-Sebastien Lerandy</span><br>
+				<span class="job">Musicen - Compositeur - Arrangeur</span>
+			</div>
+			<div class="social-network">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+
+<script type="text/javascript">
+	function store() {
+    	var btn_spotlight = document.getElementById("menu-spotlight");
+    	var btn_store = document.getElementById("menu-store");
+    	var btn_contact = document.getElementById("menu-contact");
+
+    	var ctn_spotlight = document.getElementById("content-spotlight");
+    	var ctn_store = document.getElementById("content-store");
+    	var ctn_contact = document.getElementById("content-contact");
+
+
+		    	btn_store.classList.remove('inactive');
+		    	btn_store.classList.add('active');
+		    	ctn_store.style.display = "block";
+
+		    	btn_spotlight.classList.remove('active');
+		    	btn_spotlight.classList.add('inactive');
+		    	ctn_spotlight.style.display = "none";
+
+		    	btn_contact.classList.remove('active');
+		    	btn_contact.classList.add('inactive');
+		    	ctn_contact.style.display = "none";
+
+
+
+    }
+
+    function spotlight() {
+    	var btn_spotlight = document.getElementById("menu-spotlight");
+    	var btn_store = document.getElementById("menu-store");
+    	var btn_contact = document.getElementById("menu-contact");
+
+    	var ctn_spotlight = document.getElementById("content-spotlight");
+    	var ctn_store = document.getElementById("content-store");
+    	var ctn_contact = document.getElementById("content-contact");
+
+
+		    	btn_store.classList.remove('active');
+		    	btn_store.classList.add('inactive');
+		    	ctn_store.style.display = "none";
+
+		    	btn_spotlight.classList.remove('inactive');
+		    	btn_spotlight.classList.add('active');
+		    	ctn_spotlight.style.display = "block";
+
+		    	btn_contact.classList.remove('active');
+		    	btn_contact.classList.add('inactive');
+		    	ctn_contact.style.display = "none";
+    }
+
+    function contact() {
+    	var btn_spotlight = document.getElementById("menu-spotlight");
+    	var btn_store = document.getElementById("menu-store");
+    	var btn_contact = document.getElementById("menu-contact");
+
+    	var ctn_spotlight = document.getElementById("content-spotlight");
+    	var ctn_store = document.getElementById("content-store");
+    	var ctn_contact = document.getElementById("content-contact");
+
+
+		    	btn_store.classList.remove('active');
+		    	btn_store.classList.add('inactive');
+		    	ctn_store.style.display = "none";
+
+		    	btn_spotlight.classList.remove('active');
+		    	btn_spotlight.classList.add('inactive');
+		    	ctn_spotlight.style.display = "none";
+
+		    	btn_contact.classList.remove('inactive');
+		    	btn_contact.classList.add('active');
+		    	ctn_contact.style.display = "block";
+    }
+
+</script>
+
+
+
+
+
+			<div class="menu">
+				<ul class="menu-list">
+					<li class="active" id="menu-spotlight" onclick="javascript:spotlight();"><a>spotlight</a></li>
+					<li class="inactive" id="menu-store" onclick="javascript:store();"><a>store</a></li>
+					<li class="inactive" id="menu-contact" onclick="javascript:contact();"><a>contact</a></li>
+				</ul>
+			</div>	
+		</div>
+		<div class="content">
+			<div class="spotlight active" id="content-spotlight">
+
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/92432725&amp;color=d81355&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+				<div class="facebook-responsive">
+				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fjeansebastien.lerandy%2Fvideos%2F1300904789980151%2F&show_text=1&width=560" width="560" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+
+
+				<div class="facebook-responsive">
+				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fjeansebastien.lerandy%2Fvideos%2F1475823315821630%2F&show_text=1&width=560" width="560" height="419" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/92432725&amp;color=d81355&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/118038688&amp;color=d81355&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				<div class="facebook-responsive">
+				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fjeansebastien.lerandy%2Fvideos%2F1488422021228426%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				</div>
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/92432725&amp;color=d81355&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/118038688&amp;color=d81355&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</div>
+			<div class="store" id="content-store">a</div>
+			<div class="contact" id="content-contact">b</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>
